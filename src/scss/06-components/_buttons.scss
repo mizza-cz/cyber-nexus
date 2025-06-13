@@ -1,0 +1,56 @@
+[class^='button-'] {
+  display: inline-flex;
+  gap: 1rem;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.2s !important;
+  text-decoration-color: transparent !important;
+  cursor: pointer;
+
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 100%;
+  letter-spacing: -0.06em;
+  padding: 15px 26px 13px;
+
+  @include media-breakpoint-down(md) {
+    padding: 10px 18px 8px;
+    font-size: 17px;
+  }
+  svg path {
+    transition: all 0.2s;
+  }
+}
+
+.button-primary {
+  color: var(--color-light);
+  background-color: var(--color-primary);
+
+  box-shadow: 0px 0px 20px 0px #ffffff73;
+  border: 1px solid var(--color-primary);
+
+  &:hover {
+    background-color: transparent;
+    color: var(--color-primary);
+  }
+}
+
+.button-white {
+  background-color: transparent;
+  border: 1px solid var(--color-light);
+  color: var(--color-light);
+  &:hover {
+    color: var(--color-primary);
+    background-color: var(--color-light);
+  }
+}
+
+.button-gradient {
+  background: linear-gradient(83.81deg, #abe0b7 0%, #68ac78 100%);
+  color: var(--color-light);
+  box-shadow: 0px 0px 20px 0px #68ac78b0;
+  &:hover {
+    background: var(--color-light);
+    color: var(--color-green);
+  }
+}

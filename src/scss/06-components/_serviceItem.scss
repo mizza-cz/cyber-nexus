@@ -1,0 +1,57 @@
+.serviceItem {
+  background-color: var(--color-light);
+  padding: 32px;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  align-items: center;
+  justify-content: space-between;
+  gap: 24px;
+  @include media-breakpoint-down(md) {
+    padding: 24px;
+    gap: 16px;
+  }
+  &__icon {
+    width: 56px;
+    height: 56px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 100%;
+    background: linear-gradient(180deg, #042924 0%, #2c5550 100%);
+    margin: 0 auto;
+    @include media-breakpoint-down(md) {
+      width: 40px;
+      height: 40px;
+    }
+    img {
+      @include media-breakpoint-down(md) {
+        width: 20px;
+        height: 20px;
+      }
+    }
+  }
+  &__title {
+    font-weight: 700;
+    font-size: 28px;
+    line-height: 32px;
+    letter-spacing: -0.06em;
+    color: var(--color-primary);
+    @include media-breakpoint-down(md) {
+      font-size: 20px;
+      line-height: 23px;
+    }
+  }
+  p {
+    opacity: 0.75;
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 25px;
+    letter-spacing: -0.06em;
+    color: var(--color-primary);
+    @include media-breakpoint-down(md) {
+      font-size: 16px;
+      line-height: 18px;
+    }
+  }
+}

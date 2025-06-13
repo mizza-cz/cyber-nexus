@@ -1,0 +1,26 @@
+/*! purgecss start ignore */
+.gradient-primary {
+  background: var(--gradient-primary);
+}
+.bg-white {
+  background-color: var(--color-light) !important;
+}
+.bg-black {
+  background-color: var(--color-black) !important;
+}
+.text-primary {
+  color: var(--color-primary) !important;
+}
+.text-white {
+  color: var(--color-light) !important;
+}
+.text-gray {
+  color: var(--color-gray) !important;
+}
+.underline-hover {
+  text-decoration-color: transparent;
+  &:hover {
+    text-decoration-color: inherit;
+  }
+}
+/*! purgecss end ignore */

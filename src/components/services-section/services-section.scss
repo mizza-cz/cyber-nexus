@@ -1,0 +1,12 @@
+.services-load-more {
+  margin-top: 32px;
+  @include media-breakpoint-up(xxl) {
+    margin-top: 170px;
+  }
+  @include media-breakpoint-up(lg) {
+    margin-top: 120px;
+  }
+  @include media-breakpoint-up(md) {
+    margin-top: 80px;
+  }
+}

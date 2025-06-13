@@ -1,0 +1,17 @@
+.title-decore {
+  position: relative;
+  display: inline-block;
+  margin: 0;
+}
+.title-decore__icon {
+  position: absolute;
+  left: -58px;
+  top: -48px;
+  width: 88px;
+  object-fit: contain;
+  @include media-breakpoint-down(md) {
+    width: 2.8rem;
+    left: -1.8rem;
+    top: -1.5rem;
+  }
+}

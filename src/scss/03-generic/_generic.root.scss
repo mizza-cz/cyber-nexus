@@ -1,0 +1,15 @@
+:root {
+  --color-light: #fff;
+  --color-black: #000;
+  --bs-white-rgb: var(--color-light);
+  --bs-black-rgb: var(--color-black);
+  --color-primary: #042924;
+  --color-primary-light: #34635c;
+  --color-green: #68ac78;
+  --color-gray: #c5c5c5;
+  --bs-primary-rgb: var(--color-primary);
+  --font-primary: 'Akkurat Pro';
+  --font-secondary: 'Honey Salt';
+
+  --gradient-primary: linear-gradient(180deg, #042924 0%, #063a33 50%, #042924 100%);
+}
