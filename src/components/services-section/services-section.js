@@ -19,7 +19,6 @@
 
       if (!response.ok) {
         console.warn('Nepodařilo se načíst další služby.');
-        loader.remove();
         return;
       }
 
@@ -28,9 +27,7 @@
       if (data.html) {
         const range = document.createRange();
         const documentFragment = range.createContextualFragment(data.html);
-        const elements = Array.from(documentFragment.children);
-
-        servicesSection.append(...elements);
+        servicesSection.append(...documentFragment.children);
       }
 
       loadMoreBtn.style.display = 'none';
