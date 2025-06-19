@@ -3,7 +3,7 @@
   display: inline-block;
   margin: 0;
 }
-.title-decore__icon {
+.h1 .title-decore__icon {
   position: absolute;
   left: -58px;
   top: -48px;
@@ -13,5 +13,17 @@
     width: 2.8rem;
     left: -1.8rem;
     top: -1.5rem;
+  }
+}
+.h2 .title-decore__icon {
+  position: absolute;
+  left: -2.5rem;
+  top: -1.9rem;
+  width: 60px;
+  object-fit: contain;
+  @include media-breakpoint-down(md) {
+    width: 2.7rem;
+    left: -1.8rem;
+    top: -1.1rem;
   }
 }

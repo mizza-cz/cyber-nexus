@@ -12,5 +12,9 @@
   --font-primary: 'Akkurat Pro';
   --font-secondary: 'Honey Salt';
 
+  --bs-border-width: 1px;
+  --bs-border-style: solid;
+  --bs-border-color: var(--color-primary);
+
   --gradient-primary: linear-gradient(180deg, #042924 0%, #063a33 50%, #042924 100%);
 }

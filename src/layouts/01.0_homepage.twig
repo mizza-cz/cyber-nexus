@@ -1,11 +1,11 @@
 {% extends "@components/base/base.twig" %} {% set title = "01.0_homepage" %} {% block main %} {%
 include "@components/hero-section/hero-section.twig" %}
-<section class="bg-white py-18">
+<section class="bg-white py-md-18 py-14">
   <div class="container-xxl">
     <div class="services-section">
-      <div class="row g-xxl-20 g-xl-16 g-lg-10 g-8">
+      <div class="row g-xxl-20 g-xl-16 g-12 justify-content-center">
         <div class="col-lg-4 col-md-6">
-          <div class="serviceItem">
+          <div class="serviceItem py-0 px-md-8 px-0">
             <div
               class="d-flex flex-column align-items-center justify-content-center gap-md-3 gap-2 text-center"
             >
@@ -28,7 +28,7 @@ include "@components/hero-section/hero-section.twig" %}
           </div>
         </div>
         <div class="col-lg-4 col-md-6">
-          <div class="serviceItem">
+          <div class="serviceItem py-0 px-md-8 px-0">
             <div
               class="d-flex flex-column align-items-center justify-content-center gap-md-3 gap-2 text-center"
             >
@@ -52,7 +52,7 @@ include "@components/hero-section/hero-section.twig" %}
           </div>
         </div>
         <div class="col-lg-4 col-md-6">
-          <div class="serviceItem">
+          <div class="serviceItem py-0 px-md-8 px-0">
             <div
               class="d-flex flex-column align-items-center justify-content-center gap-md-3 gap-2 text-center"
             >
@@ -77,11 +77,8 @@ include "@components/hero-section/hero-section.twig" %}
           </div>
         </div>
       </div>
-      <button class="button-white services-load-more text-center mx-auto d-block">
-        Načíst další
-      </button>
     </div>
   </div>
 </section>
-
-{% endblock %}
+{% include "@components/hp-testimonials/hp-testimonials.twig" %} {% include
+"@components/contactUs/contactUs.twig" %} {% endblock %}

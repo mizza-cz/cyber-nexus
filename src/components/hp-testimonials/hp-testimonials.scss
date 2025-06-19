@@ -1,0 +1,33 @@
+.hp-testimonials {
+  background: linear-gradient(90deg, #042924 0%, #063a33 50%, #042924 100%);
+  padding: 80px 0 124px;
+  @include media-breakpoint-down(md) {
+    padding: 54px 0;
+  }
+}
+
+.testimonials-container {
+  max-width: 68.7rem;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 24px;
+}
+.testimonials {
+  &__inner {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 32px;
+    justify-content: center;
+  }
+  &__item {
+    max-width: 320px;
+    width: 100%;
+    background-color: var(--color-light);
+    box-shadow: 0px 0px 25px 0px #ffffff87;
+    padding: 28px 18px 28px 28px;
+    height: 100%;
+    @include media-breakpoint-down(md) {
+      padding: 20px 14px 20px 20px;
+    }
+  }
+}
