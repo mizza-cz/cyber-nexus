@@ -1,6 +1,8 @@
 .header {
-  box-shadow: 0px 2px 6.8px 0px #04292440;
   background-color: var(--color-light);
+  box-shadow: 0px 2px 6.8px 0px #04292440;
+  position: relative;
+  z-index: 99;
   &__inner {
     padding: 12px 24px;
     margin: 0 auto;
