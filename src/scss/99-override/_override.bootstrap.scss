@@ -9,6 +9,9 @@
 .bg-black {
   background-color: var(--color-black) !important;
 }
+.bg-green-10 {
+  background: rgba(#68ac78, 0.1);
+}
 .text-primary {
   color: var(--color-primary) !important;
 }
@@ -29,6 +32,12 @@
 }
 .opacity-80 {
   opacity: 0.8;
+}
+.opacity-75 {
+  opacity: 0.75;
+}
+.opacity-85 {
+  opacity: 0.85;
 }
 .disc-list {
   display: flex;
