@@ -1,0 +1,65 @@
+<section class="contacts-section">
+  <form class="contacts-form" action="">
+    <div class="row w-100 g-10">
+      <div class="col-lg-6">
+        <h2 class="h2 text-primary mb-1">Kontaktní formulář</h2>
+        <div class="text-lg text-primary-light mb-10">Zabere to pouze chvilku</div>
+        <div class="row g-10">
+          <div class="col-xl-6 col-lg-12 col-md-6">
+            <label class="contacts-label">
+              <input type="text" name="name" placeholder="Křestní jméno" />
+            </label>
+          </div>
+          <div class="col-xl-6 col-lg-12 col-md-6">
+            <label class="contacts-label">
+              <input type="text" name="surname" placeholder="Příjmení" />
+            </label>
+          </div>
+          <div class="col-12">
+            <label class="contacts-label">
+              <input type="text" name="firma" placeholder="Název společnosti" />
+            </label>
+          </div>
+          <div class="col-12">
+            <label class="contacts-label">
+              <input type="email" name="email" placeholder="E-mailová adresa" />
+            </label>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-6">
+        <label class="contacts-upload">
+          <div class="upload-box">
+            <img
+              src="images/ico/upload.svg"
+              class="mb-5 mx-auto object-fit-contain"
+              width="58"
+              height="58"
+              alt=""
+            />
+            <div class="text-sm fw-bold text-primary mb-1">Zde můžete nahrát Vaše přílohy</div>
+            <div class="text-xs text-primary-light">
+              Podporované soubory: .pdf, .docx, Max: 30MB
+            </div>
+            <input type="file" name="file" accept=".pdf,.docx" />
+          </div>
+        </label>
+        <div class="contacts-textarea">
+          <textarea placeholder="Zde nám napište Vaši zprávu.." name="message"></textarea>
+        </div>
+      </div>
+      <div class="col-12">
+        <div class="contacts-footer">
+          <div class="g-recaptcha" data-sitekey="YOUR_RECAPTCHA_SITE_KEY"></div>
+          <label class="contacts-agree d-flex align-items-center gap-2">
+            <input type="checkbox" id="agree" name="agree" />
+            <div class="text-sm text-primary">
+              Souhlasím se <a class="fw-bold" href="#">zpracováním osobních údajů</a>
+            </div>
+          </label>
+        </div>
+      </div>
+    </div>
+    <button class="button-gradient mt-12 mx-auto d-flex" type="submit">Odeslat formulář</button>
+  </form>
+</section>

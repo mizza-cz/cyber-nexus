@@ -49,9 +49,21 @@
   background: linear-gradient(83.81deg, #abe0b7 0%, #68ac78 100%);
   color: var(--color-light);
   box-shadow: 0px 0px 20px 0px #68ac78b0;
+  border: none !important;
+  svg {
+    width: 18px;
+    height: 24px;
+    object-fit: contain;
+  }
   &:hover {
     background: var(--color-light);
     color: var(--color-green);
+    svg {
+      path {
+        stroke: var(--color-green);
+        fill: var(--color-green);
+      }
+    }
   }
 }
 .button-white {
@@ -68,5 +80,11 @@
   &:hover {
     color: var(--color-light);
     background-color: var(--color-primary);
+    svg {
+      path {
+        stroke: var(--color-light);
+        fill: var(--color-light);
+      }
+    }
   }
 }

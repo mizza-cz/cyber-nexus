@@ -1,0 +1,125 @@
+<div class="archive">
+  <form class="mb-md-18 mb-8 archiveForm">
+    <div class="archiveForm__search">
+      <input type="text" placeholder="Zadejte název projektu.." name="q" />
+
+      <button class="archiveForm__search-btn">
+        <img src="images/ico/search.svg" width="24" height="24" alt="search" />
+      </button>
+    </div>
+
+    <!-- hidden input to keep current category value if query search -->
+    <input type="hidden" name="category" value="1" />
+    <div
+      class="d-flex flex-lg-row flex-column align-items-center gap-md-5 gap-2 flex-wrap justify-content-xl-start justify-content-center"
+    >
+      <div class="d-flex gap-2 align-items-center text-lg text-white">
+        <img src="images/ico/eye.svg" width="28" height="25" class="archiveForm__view" alt="eye" />
+        Zobrazovat:
+      </div>
+      <div
+        role="tablist"
+        class="d-flex align-items-center justify-content-center gap-md-5 gap-3 flex-wrap"
+      >
+        <button
+          name="category"
+          value="1"
+          class="archiveForm__btn active"
+          role="tab"
+          aria-selected="true"
+        >
+          Zdravotnictví
+        </button>
+        <button name="category" value="2" class="archiveForm__btn active" role="tab">
+          Komerční sektor
+        </button>
+        <button name="category" value="3" class="archiveForm__btn inActive" role="tab">
+          Technologie
+        </button>
+      </div>
+    </div>
+  </form>
+  <div class="archive__inner">
+    <div class="archiveItem">
+      <div class="archiveItem__content">
+        <h2 class="h2 text-primary mb-4">Případová studie číslo jedna z roku 2023</h2>
+        <p class="text-lg text-primary mb-4">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque ac dolor purus.
+        </p>
+        <div
+          class="d-flex gap-md-6 gap-4 align-items-center flex-wrap justify-content-lg-start justify-content-center"
+        >
+          <a href="#" download class="button-gradient">
+            Stáhnout PDF {% include "@images/download.svg" %}
+          </a>
+          <a href="#" download class="button-white">
+            Více info{% include "@images/arrow-right.svg" %}
+          </a>
+        </div>
+      </div>
+      <div class="archiveItem__img">
+        <img
+          srcset="https://picsum.photos/950/600 784w, https://picsum.photos/250/200 640w"
+          width="475"
+          height="300"
+          loading="lazy"
+          alt="video"
+        />
+      </div>
+    </div>
+    <div class="archiveItem">
+      <div class="archiveItem__content">
+        <h2 class="h2 text-primary mb-4">Případová studie číslo jedna z roku 2023</h2>
+        <p class="text-lg text-primary mb-4">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque ac dolor purus.
+        </p>
+        <div
+          class="d-flex gap-md-6 gap-4 align-items-center flex-wrap justify-content-lg-start justify-content-center"
+        >
+          <a href="#" download class="button-gradient">
+            Stáhnout PDF {% include "@images/download.svg" %}
+          </a>
+          <a href="#" download class="button-white">
+            Více info{% include "@images/arrow-right.svg" %}
+          </a>
+        </div>
+      </div>
+      <div class="archiveItem__img">
+        <img
+          srcset="https://picsum.photos/950/600 784w, https://picsum.photos/250/200 640w"
+          width="475"
+          height="300"
+          loading="lazy"
+          alt="video"
+        />
+      </div>
+    </div>
+    <div class="archiveItem">
+      <div class="archiveItem__content">
+        <h2 class="h2 text-primary mb-4">Případová studie číslo jedna z roku 2023</h2>
+        <p class="text-lg text-primary mb-4">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque ac dolor purus.
+        </p>
+        <div
+          class="d-flex gap-md-6 gap-4 align-items-center flex-wrap justify-content-lg-start justify-content-center"
+        >
+          <a href="#" download class="button-gradient">
+            Stáhnout PDF {% include "@images/download.svg" %}
+          </a>
+          <a href="#" download class="button-white">
+            Více info{% include "@images/arrow-right.svg" %}
+          </a>
+        </div>
+      </div>
+      <div class="archiveItem__img">
+        <img
+          srcset="https://picsum.photos/950/600 784w, https://picsum.photos/250/200 640w"
+          width="475"
+          height="300"
+          loading="lazy"
+          alt="video"
+        />
+      </div>
+    </div>
+  </div>
+</div>

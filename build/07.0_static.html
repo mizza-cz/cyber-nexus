@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="cs-CZ">
+
+<head>
+	<meta charset="utf-8" />
+	<title>07.0_static - CyberNexus</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no" />
+	<meta name="format-detection" content="telephone=no" />
+
+	<!--****** Favicon ******-->
+	<!--****** Fonts ******-->
+
+	<!--****** Styles  ******-->
+	<link rel="preload" href="css/styles.css" as="style" />
+	<link rel="stylesheet" media="screen, handheld" href="css/styles.css" />
+	<link rel="stylesheet" media="print" href="css/prints.css" />
+	<!--****** Styles  ******-->
+
+	<!--****** Scripts  ******-->
+	<link rel="preload" href="https://code.jquery.com/jquery-3.6.0.min.js" as="script" crossorigin />
+	<link rel="preload" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" as="script" crossorigin />
+	<link rel="preload" href="js/scripts.js" as="script" />
+	<!-- ****** scripts ****** -->
+</head>
+
+<body>
+	<div class="base">
+		<header class="header">
+			<div class="header__inner">
+				<a href="#" class="header__logo">
+					<img src="images/content/logo.png" width="206" height="78" alt="logo" />
+				</a>
+				<nav class="collapse navbar-collapse" id="navbarNavDropdown">
+					<ul class="navbar-nav">
+						<li class="nav-item dropdown">
+							<a class="nav-link dropdown-toggle" href="#" id="about" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+								O nás
+							</a>
+							<ul class="dropdown-menu" aria-labelledby="about">
+								<li><a class="dropdown-item" href="#">O nás</a></li>
+								<li><a class="dropdown-item" href="#">Historie</a></li>
+
+								<li>
+									<a class="dropdown-item" href="#">Nejčastějšie dotazy</a>
+								</li>
+							</ul>
+						</li>
+
+						<li class="nav-item dropdown">
+							<a class="nav-link dropdown-toggle" href="#" id="study" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+								Case studies
+							</a>
+							<ul class="dropdown-menu" aria-labelledby="study">
+								<li><a class="dropdown-item" href="#">study 1</a></li>
+								<li><a class="dropdown-item" href="#">study 2</a></li>
+								<li>
+									<a class="dropdown-item" href="#">study 3 </a>
+								</li>
+							</ul>
+						</li>
+						<li class="nav-item dropdown">
+							<a class="nav-link dropdown-toggle active" href="#" id="members" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+								Služby
+							</a>
+							<ul class="dropdown-menu" aria-labelledby="members">
+								<li><a class="dropdown-item" href="#">Služby</a></li>
+								<li><a class="dropdown-item" href="#">SlužbySlužbySlužby</a></li>
+							</ul>
+						</li>
+
+						<li class="nav-item">
+							<a class="nav-link" href="#"> Kontakt </a>
+						</li>
+					</ul>
+					<div class="d-lg-none d-flex mx-auto">
+						<a href="#" class="button-gradient"> Mám zájem </a>
+					</div>
+				</nav>
+				<a href="#" class="button-gradient d-lg-flex d-none"> Mám zájem </a>
+				<button class="c-header__opener js-header__opener" type="button">
+					<span></span>
+				</button>
+			</div>
+		</header>
+		<main class="main" aria-label="Hlavní obsah">
+			<div class="gradient-primary pt-md-18 pt-12">
+				<div class="container-xxl">
+					<div class="mb-md-18 mb-8 d-flex flex-column align-items-center pt-md-7 pt-4">
+						<h1 class="h1 title-decore text-white">
+							<img src="images/ico/decore.svg" class="title-decore__icon" alt="" />
+							Kontakt
+						</h1>
+						<p class="text-center text-lg text-gray">
+							Ke společné spolupráci již stačí pouze vyplnit krátký formulář níže
+						</p>
+					</div>
+					<section class="contacts-section">
+						<form class="contacts-form" action="">
+							<div class="row w-100 g-10">
+								<div class="col-lg-6">
+									<h2 class="h2 text-primary mb-1">Kontaktní formulář</h2>
+									<div class="text-lg text-primary-light mb-10">Zabere to pouze chvilku</div>
+									<div class="row g-10">
+										<div class="col-xl-6 col-lg-12 col-md-6">
+											<label class="contacts-label">
+												<input type="text" name="name" placeholder="Křestní jméno" />
+											</label>
+										</div>
+										<div class="col-xl-6 col-lg-12 col-md-6">
+											<label class="contacts-label">
+												<input type="text" name="surname" placeholder="Příjmení" />
+											</label>
+										</div>
+										<div class="col-12">
+											<label class="contacts-label">
+												<input type="text" name="firma" placeholder="Název společnosti" />
+											</label>
+										</div>
+										<div class="col-12">
+											<label class="contacts-label">
+												<input type="email" name="email" placeholder="E-mailová adresa" />
+											</label>
+										</div>
+									</div>
+								</div>
+								<div class="col-lg-6">
+									<label class="contacts-upload">
+										<div class="upload-box">
+											<img src="images/ico/upload.svg" class="mb-5 mx-auto object-fit-contain" width="58" height="58" alt="" />
+											<div class="text-sm fw-bold text-primary mb-1">Zde můžete nahrát Vaše přílohy</div>
+											<div class="text-xs text-primary-light">
+												Podporované soubory: .pdf, .docx, Max: 30MB
+											</div>
+											<input type="file" name="file" accept=".pdf,.docx" />
+										</div>
+									</label>
+									<div class="contacts-textarea">
+										<textarea placeholder="Zde nám napište Vaši zprávu.." name="message"></textarea>
+									</div>
+								</div>
+								<div class="col-12">
+									<div class="contacts-footer">
+										<div class="g-recaptcha" data-sitekey="YOUR_RECAPTCHA_SITE_KEY"></div>
+										<label class="contacts-agree d-flex align-items-center gap-2">
+											<input type="checkbox" id="agree" name="agree" />
+											<div class="text-sm text-primary">
+												Souhlasím se <a class="fw-bold" href="#">zpracováním osobních údajů</a>
+											</div>
+										</label>
+									</div>
+								</div>
+							</div>
+							<button class="button-gradient mt-12 mx-auto d-flex" type="submit">Odeslat formulář</button>
+						</form>
+					</section>
+				</div>
+			</div>
+		</main>
+		<footer class="footer">
+			<div class="footer__inner">
+				<div class="footer__contacts">
+					<a href="#" class="footer__logo">
+						<img src="images/content/logo.png" width="206" height="78" class="object-fit-contain" alt="logo" />
+					</a>
+					<ul class="d-flex flex-column gap-4 text-lg text-primary fw-light text-xl-start text-center">
+						<li>Euro Enterprise Development s.r.o.</li>
+						<li>Říční 456/10, 118 00 Praha 1 – Malá Strana</li>
+						<li>IČ: 27773728 | DIČ: CZ27773728</li>
+						<li>E-mail: <a href="mailto:info@cybernexus.cz"> info@cybernexus.cz</a></li>
+						<li>Datová schránka: cvejsj9</li>
+					</ul>
+				</div>
+				<div class="row footer__menu gap-xl-16 gap-md-10 gap-3">
+					<div class="col">
+						<a href="#" class="text-md fw-bold text-primary mb-md-6 d-block"> Sekce </a>
+						<ul class="text-primary fw-light text-lg d-grid gap-6">
+							<li>
+								<a href="#">Úvod</a>
+							</li>
+							<li>
+								<a href="#">O nás</a>
+							</li>
+							<li>
+								<a href="#">Case Studies</a>
+							</li>
+							<li>
+								<a href="#">Služby</a>
+							</li>
+							<li>
+								<a href="#">Kontakt</a>
+							</li>
+						</ul>
+					</div>
+					<div class="col">
+						<a href="#" class="text-md fw-bold text-primary mb-md-6 d-block"> Služby </a>
+						<ul class="text-primary fw-light text-lg d-grid gap-6">
+							<li>
+								<a href="#">Kybernetická bezpečnost</a>
+							</li>
+							<li>
+								<a href="#">eHealth</a>
+							</li>
+							<li>
+								<a href="#">Konzultace </a>
+							</li>
+						</ul>
+					</div>
+					<div class="col">
+						<a href="#" class="text-md fw-bold text-primary mb-md-6 d-block"> Kontaktujte nás </a>
+						<ul class="text-primary fw-light text-lg d-grid gap-6">
+							<li>
+								<a href="#">Kontaktní údaje</a>
+							</li>
+							<li>
+								<a href="#">Poptávkový formulář</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</footer>
+	</div>
+	<script defer src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+	<script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+	<script src="https://www.google.com/recaptcha/api.js" async defer></script>
+	<script defer src="js/scripts.js"></script>
+</body>
+
+</html>
