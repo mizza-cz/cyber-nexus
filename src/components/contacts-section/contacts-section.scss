@@ -1,8 +1,15 @@
 .contacts-section {
-  display: flex;
-  width: 100%;
-  background-color: var(--color-light);
-  padding: 100px 100px 65px 100px;
+  &__top {
+    display: flex;
+    width: 100%;
+    background-color: var(--color-light);
+    padding: 100px 100px 65px 100px;
+    margin-bottom: 68px;
+  }
+  &__bottom {
+    padding: 60px 32px 72px 32px;
+    background: linear-gradient(180deg, #042520 0%, rgba(4, 37, 32, 0.6) 100%);
+  }
 }
 
 .contacts-label {
