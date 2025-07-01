@@ -1,7 +1,7 @@
 {% extends "@components/base/base.twig" %} {% set title = "08.0_projects" %} {% block main %}
 
 <div class="gradient-primary pt-md-18 pt-12">
-  <div class="container-lg">
+  <div class="container-md">
     <div class="mb-md-18 mb-6 d-flex flex-column align-items-center pt-md-7 pt-4">
       <h1 class="h1 title-decore text-white mb-md-2 mb-3">
         <img src="images/ico/decore.svg" class="title-decore__icon" alt="" />
@@ -9,7 +9,7 @@
       </h1>
       <p class="text-center text-lg text-gray">Case studies</p>
     </div>
-    {% include "@components/archive/archive.twig" %}
   </div>
+  <div class="container-lg">{% include "@components/archive/archive.twig" %}</div>
 </div>
 {% endblock %}
