@@ -37,6 +37,7 @@
       position: relative;
       width: fit-content;
       padding-right: 48px;
+      line-height: 135%;
       @include media-breakpoint-down(lg) {
         padding-left: 32px;
         padding-right: 32px;
