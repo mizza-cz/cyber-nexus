@@ -1,8 +1,11 @@
 .header {
   background-color: var(--color-light);
   box-shadow: 0px 2px 6.8px 0px #04292440;
-  position: relative;
+  position: sticky;
   z-index: 99;
+  top: 0;
+  overflow-x: hidden;
+  width: 100%;
   &__inner {
     padding: 12px 24px;
     margin: 0 auto;
@@ -248,4 +251,25 @@
   .navbar .nav-item .dropdown-menu {
     margin-top: 0;
   }
+}
+
+.header.scrolled {
+  .button-gradient {
+    font-size: 1.2rem;
+    padding: 0.8rem 1.5rem;
+  }
+  .header__logo {
+    width: 10rem;
+    height: 4rem;
+    @include media-breakpoint-down(lg) {
+      width: 8rem;
+      height: 3rem;
+    }
+  }
+  .dropdown-menu {
+    top: 75%;
+  }
+}
+
+.is-nav-open .header {
 }

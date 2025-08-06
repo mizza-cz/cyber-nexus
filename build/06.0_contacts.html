@@ -59,7 +59,7 @@
 							</ul>
 						</li>
 						<li class="nav-item dropdown">
-							<a class="nav-link dropdown-toggle active" href="#" id="members" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+							<a class="nav-link dropdown-toggle" href="#" id="members" role="button" data-bs-toggle="dropdown" aria-expanded="false">
 								Služby
 							</a>
 							<ul class="dropdown-menu" aria-labelledby="members">
@@ -97,107 +97,109 @@
 						</p>
 					</div>
 				</div>
-				<div class="container-big">
-					<section class="contacts-section">
-						<div class="contacts-section__top">
-							<form class="contacts-form" action="">
-								<div class="row g-10">
-									<div class="col-lg-6">
-										<h2 class="h2 text-primary mb-1">Kontaktní formulář</h2>
-										<div class="text-lg text-primary-light mb-10">Zabere to pouze chvilku</div>
-										<div class="row g-10">
-											<div class="col-xl-6 col-lg-12 col-md-6">
-												<label class="contacts-label">
-													<input type="text" name="name" placeholder="Křestní jméno" />
-												</label>
-											</div>
-											<div class="col-xl-6 col-lg-12 col-md-6">
-												<label class="contacts-label">
-													<input type="text" name="surname" placeholder="Příjmení" />
-												</label>
-											</div>
-											<div class="col-12">
-												<label class="contacts-label">
-													<input type="text" name="firma" placeholder="Název společnosti" />
-												</label>
-											</div>
-											<div class="col-12">
-												<label class="contacts-label">
-													<input type="email" name="email" placeholder="E-mailová adresa" />
-												</label>
-											</div>
-											<div class="col-12">
-												<div class="phone-field">
-													<img id="flag-img" class="flag" src="https://flagcdn.com/w40/cz.png" alt="CZ flag" />
-													<select id="country-select" class="phone-select">
-														<option value="+420" data-flag="cz">CZ +420</option>
-														<option value="+48" data-flag="pl">PL +48</option>
-														<option value="+49" data-flag="de">DE +49</option>
-														<option value="+44" data-flag="gb">UK +44</option>
-														<option value="+1" data-flag="us">US +1</option>
-													</select>
-													<input type="tel" class="phone-input" placeholder="256 895 123" />
+				<div class="contactsPage">
+					<div class="container-big">
+						<section class="contacts-section">
+							<div class="contacts-section__top">
+								<form class="contacts-form" action="">
+									<div class="row g-10">
+										<div class="col-lg-6">
+											<h2 class="h2 text-primary mb-1">Kontaktní formulář</h2>
+											<div class="text-lg text-primary-light mb-10">Zabere to pouze chvilku</div>
+											<div class="row g-10">
+												<div class="col-xl-6 col-lg-12 col-md-6">
+													<label class="contacts-label">
+														<input type="text" name="name" placeholder="Křestní jméno" />
+													</label>
+												</div>
+												<div class="col-xl-6 col-lg-12 col-md-6">
+													<label class="contacts-label">
+														<input type="text" name="surname" placeholder="Příjmení" />
+													</label>
+												</div>
+												<div class="col-12">
+													<label class="contacts-label">
+														<input type="text" name="firma" placeholder="Název společnosti" />
+													</label>
+												</div>
+												<div class="col-12">
+													<label class="contacts-label">
+														<input type="email" name="email" placeholder="E-mailová adresa" />
+													</label>
+												</div>
+												<div class="col-12">
+													<div class="phone-field">
+														<img id="flag-img" class="flag" src="https://flagcdn.com/w40/cz.png" alt="CZ flag" />
+														<select id="country-select" class="phone-select">
+															<option value="+420" data-flag="cz">CZ +420</option>
+															<option value="+48" data-flag="pl">PL +48</option>
+															<option value="+49" data-flag="de">DE +49</option>
+															<option value="+44" data-flag="gb">UK +44</option>
+															<option value="+1" data-flag="us">US +1</option>
+														</select>
+														<input type="tel" class="phone-input" placeholder="256 895 123" />
+													</div>
 												</div>
 											</div>
 										</div>
-									</div>
-									<div class="col-lg-6">
-										<label class="contacts-upload">
-											<div class="upload-box">
-												<img src="images/ico/upload.svg" class="mb-5 mx-auto object-fit-contain" width="58" height="58" alt="" />
-												<div class="text-sm fw-bold text-primary mb-1">Zde můžete nahrát Vaše přílohy</div>
-												<div class="text-xs text-primary-light">
-													Podporované soubory: .pdf, .docx, Max: 30MB
+										<div class="col-lg-6">
+											<label class="contacts-upload">
+												<div class="upload-box">
+													<img src="images/ico/upload.svg" class="mb-5 mx-auto object-fit-contain" width="58" height="58" alt="" />
+													<div class="text-sm fw-bold text-primary mb-1">Zde můžete nahrát Vaše přílohy</div>
+													<div class="text-xs text-primary-light">
+														Podporované soubory: .pdf, .docx, Max: 30MB
+													</div>
+													<input type="file" name="file" accept=".pdf,.docx" />
 												</div>
-												<input type="file" name="file" accept=".pdf,.docx" />
-											</div>
-										</label>
-										<div class="contacts-textarea">
-											<textarea placeholder="Zde nám napište Vaši zprávu.." name="message"></textarea>
-										</div>
-									</div>
-									<div class="col-12">
-										<div class="contacts-footer">
-											<div class="g-recaptcha" data-sitekey="YOUR_RECAPTCHA_SITE_KEY"></div>
-											<label class="contacts-agree d-flex align-items-center gap-2">
-												<input type="checkbox" id="agree" name="agree" />
-												<span class="text-sm text-primary">
-													Souhlasím se <a class="fw-bold" href="#">zpracováním osobních údajů</a>
-												</span>
 											</label>
+											<div class="contacts-textarea">
+												<textarea placeholder="Zde nám napište Vaši zprávu.." name="message"></textarea>
+											</div>
+										</div>
+										<div class="col-12">
+											<div class="contacts-footer">
+												<div class="g-recaptcha" data-sitekey="YOUR_RECAPTCHA_SITE_KEY"></div>
+												<label class="contacts-agree d-flex align-items-center gap-2">
+													<input type="checkbox" id="agree" name="agree" />
+													<span class="text-sm text-primary">
+														Souhlasím se <a class="fw-bold" href="#">zpracováním osobních údajů</a>
+													</span>
+												</label>
+											</div>
 										</div>
 									</div>
+									<button class="button-gradient mt-md-12 mb-5 mt-6 mx-auto d-flex" type="submit">
+										Odeslat formulář
+									</button>
+								</form>
+							</div>
+							<div class="contacts-section__bottom">
+								<div class="text-center mb-md-10 mb-7">
+									<h3 class="h2 text-white mb-mb-2 mb-3">Potřebujete s něčím poradit?</h3>
+									<div class="text-lg text-gray">Zavolejte nám nebo nám pošlete e-mailovou zprávu</div>
 								</div>
-								<button class="button-gradient mt-md-12 mb-5 mt-6 mx-auto d-flex" type="submit">
-									Odeslat formulář
-								</button>
-							</form>
-						</div>
-						<div class="contacts-section__bottom">
-							<div class="text-center mb-md-10 mb-7">
-								<h3 class="h2 text-white mb-mb-2 mb-3">Potřebujete s něčím poradit?</h3>
-								<div class="text-lg text-gray">Zavolejte nám nebo nám pošlete e-mailovou zprávu</div>
-							</div>
-							<ul class="text-xl contacts-section__list">
-								<li>
-									E-mail:
-									<a class="fw-normal" href="mailto:email@gmail.com"> email@gmail.com</a>
-								</li>
-								<li>
-									Telefon:
-									<a class="fw-normal" href="tel:+420256895123"> +420 256 895 123</a>
-								</li>
+								<ul class="text-xl contacts-section__list">
+									<li>
+										E-mail:
+										<a class="fw-normal" href="mailto:email@gmail.com"> email@gmail.com</a>
+									</li>
+									<li>
+										Telefon:
+										<a class="fw-normal" href="tel:+420256895123"> +420 256 895 123</a>
+									</li>
 
-								<li>
-									Adresa:
-									<span class="fw-normal"> Václavské náměstí 1, 110 00 Praha 1 </span>
-								</li>
-							</ul>
-							<div class="contacts-section__map mt-md-16 mt-7">
-								<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2560.1118944983446!2d14.421652276978126!3d50.08419187152457!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x470b94ec630fac27%3A0x1bdb29c896981c41!2zVsOhY2xhdnNrw6kgbsOhbS4gMSwgMTEwIDAwIE3Fr3N0ZWs!5e0!3m2!1scs!2scz!4v1751364060013!5m2!1scs!2scz" width="1000" height="250" style="border: 0" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+									<li>
+										Adresa:
+										<span class="fw-normal"> Václavské náměstí 1, 110 00 Praha 1 </span>
+									</li>
+								</ul>
+								<div class="contacts-section__map mt-md-16 mt-7">
+									<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2560.1118944983446!2d14.421652276978126!3d50.08419187152457!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x470b94ec630fac27%3A0x1bdb29c896981c41!2zVsOhY2xhdnNrw6kgbsOhbS4gMSwgMTEwIDAwIE3Fr3N0ZWs!5e0!3m2!1scs!2scz!4v1751364060013!5m2!1scs!2scz" width="1000" height="250" style="border: 0" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+								</div>
 							</div>
-						</div>
-					</section>
+						</section>
+					</div>
 				</div>
 			</div>
 		</main>

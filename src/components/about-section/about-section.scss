@@ -3,12 +3,14 @@
   justify-content: space-between;
   align-items: center;
   gap: 32px;
-  height: calc(100vh - 96px);
+  height: 100vh;
+  padding: 40px 0;
   @include media-breakpoint-down(xl) {
     flex-direction: column;
     flex-wrap: wrap;
     justify-content: center;
     gap: 64px;
+    height: auto;
   }
   &__content {
     max-width: 600px;
@@ -31,10 +33,10 @@
       width: 11rem;
       height: 9rem;
       @include media-breakpoint-down(lg) {
-        width: 6.625rem;
-        height: 5.375rem;
-        left: -3.2rem;
-        top: -3.2rem;
+        width: 4.5rem;
+        height: 3.5rem;
+        left: -2.3rem;
+        top: -2rem;
       }
     }
     img {

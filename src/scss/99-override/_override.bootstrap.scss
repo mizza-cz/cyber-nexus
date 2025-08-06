@@ -43,6 +43,10 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  @include media-breakpoint-down(lg) {
+    display: block;
+    text-align: left;
+  }
   li + li {
     @include media-breakpoint-down(md) {
       margin-top: 4px;
@@ -52,7 +56,11 @@
     padding-left: 10px;
     position: relative;
     display: inline;
-
+    @include media-breakpoint-down(lg) {
+      text-align-last: left;
+      padding-left: 16px;
+      display: block;
+    }
     &::before {
       content: '';
       width: 6px;
